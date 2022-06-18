@@ -16,4 +16,9 @@ public class MainController {
         return "about.jsp";
     }
 
+    @RequestMapping("/services")
+    public String services() {
+        return "services.jsp";
+    }
+
 }

@@ -15,4 +15,9 @@
             $("#accordion").accordion();
         });
     </script>
+    <script type = "text/javascript">
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script> 
 </head>
