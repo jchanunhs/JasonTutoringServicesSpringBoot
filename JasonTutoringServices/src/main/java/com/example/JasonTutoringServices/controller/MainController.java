@@ -20,5 +20,25 @@ public class MainController {
     public String services() {
         return "services.jsp";
     }
+    
+    @RequestMapping("/contact")
+    public String contact() {
+        return "contact.jsp";
+    }
+    
+    @RequestMapping("/jobs")
+    public String jobs() {
+        return "jobs.jsp";
+    }
+    
+    @RequestMapping("/faq")
+    public String faq() {
+        return "faq.jsp";
+    }
 
+    @RequestMapping("/whycs")
+    public String whycs() {
+        return "whycs.jsp";
+    }
+    
 }
