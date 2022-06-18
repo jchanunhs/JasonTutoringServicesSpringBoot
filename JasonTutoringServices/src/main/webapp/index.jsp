@@ -21,7 +21,7 @@
                 <jsp:include page="downloadnav.jsp"/>
 
             </div>
-            <jsp:include page="footer_main.jsp"/>
+            <jsp:include page="footer.jsp"/>
         </div>
         <script>
             var d = new Date();
