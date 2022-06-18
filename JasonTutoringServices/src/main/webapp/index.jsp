@@ -19,7 +19,6 @@
                     <div id = "date"> </div>
                 </main>
                 <jsp:include page="downloadnav.jsp"/>
-
             </div>
             <jsp:include page="footer.jsp"/>
         </div>
