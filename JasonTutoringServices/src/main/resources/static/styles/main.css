@@ -1,0 +1,149 @@
+body{
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    background-size:cover;
+}
+
+header{
+    background-image: url("../images/tutorlogo.jpg");
+    text-shadow: 2px 2px 2px gray;
+    font-family: Arial, "Times New Roman", sans-serif;
+    font-size: 30px;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-weight: bold;
+    margin-bottom:5px;
+    text-align: center;
+    width:100%;
+}
+
+nav {
+    background-color: cyan;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    width: 15%;
+    height: auto;
+}
+
+nav a {
+    padding-top: 5px; 
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, "Times New Roman", sans-serif;
+    color:black;
+
+}
+
+nav a:hover {
+    background-color: lightyellow;
+    text-decoration: underline;
+    font-weight:bold;
+}
+
+nav a:active{
+    color:green;
+    text-decoration: underline;
+}
+
+
+#active-link{
+    background-color: lightgreen;
+}
+
+.navtitle{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, "Times New Roman", sans-serif;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    font-family: Arial, "Times New Roman", sans-serif;
+    width: 70%;
+    margin-right:5px; 
+    margin-left: 5px;
+}
+
+footer{
+    background-color: cyan;
+    font-family: Arial, "Times New Roman", sans-serif;
+    margin-top: 5px;
+    text-align: center;
+    padding-top:10px;
+    width:100%;
+    font-size:15px;
+    font-weight:bold;
+}
+
+#content-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+#wrapper { 
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1024px;
+    min-width:635px;
+}
+
+.transition{
+    width:50%;    
+    transition: width 10s;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+
+.transition:hover {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 700px) {
+
+    header{margin-bottom:0px;}
+
+    #content-wrapper{
+	display: flex;
+        flex-direction: column;
+    }
+
+    nav{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        width:100%;
+        margin-right:0px; 
+        border-top:2px solid black;
+        border-bottom:2px solid black;
+    }
+
+    nav a {
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+    .navtitle{display: none;}
+
+    main{
+	width:100%;
+	margin-right:0px;
+	margin-left:0px;
+    }
+
+    footer{margin-top:0px;}
+
+    #downloadnav{display:none;}
+
+}
+
