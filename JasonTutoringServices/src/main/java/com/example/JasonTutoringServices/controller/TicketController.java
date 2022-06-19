@@ -19,9 +19,14 @@ public class TicketController {
         ModelAndView mv = new ModelAndView();
         int id = (int) (Math.random() * 1000000) + 1000000; //Id is 7 digits long
         ticket.setId(id);
-        repo.save(ticket);
+
+        if (repo.existsById(id)) {
+            redirectAttributes.addFlashAttribute("message", "Error: Unable to save form.");
+        } else {
+            redirectAttributes.addFlashAttribute("message", "Thank you for your inquries! Your Ticket ID: " + id);
+            repo.save(ticket);
+        }
         mv.setViewName("redirect:/contact");
-        redirectAttributes.addFlashAttribute("message", "Thank you for your inquries! Your Ticket ID: " + id);
         return mv;
     }
 
