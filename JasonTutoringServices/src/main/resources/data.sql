@@ -1,1 +1,3 @@
-insert into admin values (1000, 'admin', 'password');
+insert into admin (id, username, password) values (1000, 'admin', 'password');
+insert into ticket (id,name,enroll,coursename,phone,email,question) values (1,'test',TRUE,'test','test','test','test');
+insert into ticket (id,name,enroll,coursename,phone,email,question) values (2,'test',FALSE,'test','test','test','abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz');

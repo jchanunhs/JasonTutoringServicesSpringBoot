@@ -12,7 +12,7 @@ public class Ticket {
     private int id;
     private String name;
     private boolean enroll;
-    private String courseName;
+    private String coursename;
     private String phone;
     private String email;
     private String question;
@@ -42,11 +42,11 @@ public class Ticket {
     }
 
     public String getCourseName() {
-        return courseName;
+        return coursename;
     }
 
     public void setCourseName(String courseName) {
-        this.courseName = courseName;
+        this.coursename = courseName;
     }
 
     public String getPhone() {
