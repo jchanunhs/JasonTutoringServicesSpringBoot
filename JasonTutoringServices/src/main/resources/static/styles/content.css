@@ -68,6 +68,7 @@ main {
     background-color: white;
     font-family: Arial, "Times New Roman", sans-serif;
     width: 85%;
+    flex-grow: 100;
 }
 
 footer{
@@ -93,6 +94,7 @@ table {
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
+    word-break: break-word;
 }
 
 td, th{
@@ -101,12 +103,13 @@ td, th{
     border-color: cyan;
     border-style: solid;
     text-align: center;
+    max-width: 1024px;
 }
 
 #wrapper { 
     margin-right: auto;
     margin-left: auto;
-    max-width: 1024px;
+    max-width: 1920px;
     min-width: 635px;
 }
 
