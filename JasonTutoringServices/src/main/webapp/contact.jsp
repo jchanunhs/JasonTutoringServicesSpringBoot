@@ -14,15 +14,13 @@
                           action="index.html"
                           method="post" 
                           enctype="text/plain">
-                        <label for="firstname">First Name: </label>
-                        <input type="text" name ="firstname"  id="firstname"><br>
-                        <label for="lastname">Last Name: </label>
-                        <input type="text" name ="lastname"  id="lastname"><br>
+                        <label for="firstname">Name: </label>
+                        <input type="text" name ="name"  id="name"><br>
                         <label for="enroll">Are you currently enrolled in these courses: </label>
                         <input type="radio" name="enroll" id="yes">Yes
                         <input type="radio" name="enroll" id="no">No<br>
                         <label for="courses">Tutoring Courses: </label>
-                        <select name = "courses" id = "courses">
+                        <select name = "course_name" id = "course_name">
                             <option value="other">Others</option>
                             <option value="compprog">Computer Programming</option>
                             <option value="cloud">Cloud Computing</option>
@@ -33,8 +31,8 @@
                         <input type="tel" name ="phone"  id="phone" maxlength = "10"><br>
                         <label for="email">Email: </label>
                         <input type="text" name ="email"  id="email"><br>
-                        <label for="questions">Questions:</label>
-                        <textarea name= "questions" id = "questions" rows = "10" cols = "50"></textarea><br>
+                        <label for="question">Question:</label>
+                        <textarea name= "question" id = "question" rows = "10" cols = "50"></textarea><br>
                         <input type="submit" value="Submit">
                         <input type="reset" value="Reset">
                     </form>
