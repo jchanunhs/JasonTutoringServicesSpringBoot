@@ -10,9 +10,10 @@ public class Ticket {
 
     @Id
     private int id;
-    private boolean enrolled;
-    private String course_name;
-    private String phone_number;
+    private String name;
+    private boolean enroll;
+    private String courseName;
+    private String phone;
     private String email;
     private String question;
 
@@ -24,28 +25,36 @@ public class Ticket {
         this.id = id;
     }
 
-    public boolean isEnrolled() {
-        return enrolled;
+    public String getName() {
+        return name;
     }
 
-    public void setEnrolled(boolean enrolled) {
-        this.enrolled = enrolled;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getCoursename() {
-        return course_name;
+    public boolean isEnroll() {
+        return enroll;
     }
 
-    public void setCoursename(String course_name) {
-        this.course_name = course_name;
+    public void setEnroll(boolean enroll) {
+        this.enroll = enroll;
     }
 
-    public String getPhonenumber() {
-        return phone_number;
+    public String getCourseName() {
+        return courseName;
     }
 
-    public void setPhonenumber(String phone_number) {
-        this.phone_number = phone_number;
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getEmail() {
