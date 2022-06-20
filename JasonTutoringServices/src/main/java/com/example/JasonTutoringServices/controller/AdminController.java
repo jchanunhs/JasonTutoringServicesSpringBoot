@@ -31,9 +31,7 @@ public class AdminController {
         if (id == null) {
             mv.setViewName("AdminLogin.jsp");
         } else {
-            Iterable<Ticket> ticket_iterable = ticket_repo.findAll();
-            List<Ticket> ticket_list = new ArrayList<Ticket>();
-            ticket_iterable.forEach(ticket_list::add);
+            List<Ticket> ticket_list = ticket_repo.findAll();
             mv.addObject("ticket_list",ticket_list);
             mv.setViewName("AdminPanel.jsp");
         }
