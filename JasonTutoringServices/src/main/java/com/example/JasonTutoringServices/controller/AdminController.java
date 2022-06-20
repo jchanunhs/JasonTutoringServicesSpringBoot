@@ -51,6 +51,7 @@ public class AdminController {
         Admin admin_authenticate = repo.findByUsernameAndPassword(admin.getUsername(), admin.getPassword());
         if (admin_authenticate != null) {
             Cookie cookie = new Cookie("AdminID", String.valueOf(admin_authenticate.getId()));
+            cookie.setMaxAge(60*60*24); 
             response.addCookie(cookie);
         } else {
             redirectAttributes.addFlashAttribute("message", "Error: invalid username or password.");
