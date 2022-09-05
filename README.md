@@ -1,4 +1,5 @@
 # JasonTutoringServicesSpringBoot
+
 Spring Boot verison of Jason Tutoring Services
 
 What changed?
@@ -20,3 +21,5 @@ Notes
 - I plan to implement light box in the netbeans picture.  
 - Loading jquery UI from local machine instead of http because when loading from http it takes more time to load the page. 
 - This is just a fun project for me to play around with Spring Boot. I plan to add more complexity to this project. 
+
+## Purpose of this web application is to learn from the problems I found on my old web applications and create a new web application using the latest technologies that Spring Boot has to offer. 
